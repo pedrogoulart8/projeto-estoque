@@ -15,8 +15,11 @@ export default function ShowItem() {
     return (
         <div className="item">
             <h2>Produto: {item.name}</h2>
+            <br />
+            <div className="showButtons">
             <Link to={`/items/${item.id}/update`} className="button is-green is-small">Atualizar</Link>
             <DeleteButton itemId={item.id} itemName={item.name} />
+            </div>
             <div className="row">
                 <span>Categoria: {item.category}</span>
                 <span>Quantidade em estoque: {item.quantity}</span>

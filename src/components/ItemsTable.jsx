@@ -16,25 +16,25 @@ export default function ItemsTable() {
         <table>
             <thead>
                 <tr>
-                    <th>ID</th>
+                    <th className="noMobile">ID</th>
                     <th>Nome</th>
                     <th>Em Estoque</th>
-                    <th>Categoria</th>
+                    <th className="noMobile">Categoria</th>
                     <th>Ações</th>
                 </tr>
             </thead>
             <tbody>
                 {items.map((item) => (
                     <tr key={item.id}>
-                        <td>{item.id}</td>
-                        <td>{item.name}</td>
-                        <td>{item.quantity} unid.</td>
-                        <td>{item.category}</td>
-                        <td>
-                            <Link to={`/items/${item.id}`} className="button is-small">
+                        <td className="noMobile">{item.id}</td>
+                        <td className="forMobile">{item.name}</td>
+                        <td className="forMobile">{item.quantity} unid.</td>
+                        <td className="noMobile">{item.category}</td>
+                        <td className="forMobile buttonsMobile">
+                            <Link to={`/items/${item.id}`} className="button buttonTable is-small">
                             Visualizar
                             </Link>
-                            <Link to={`/items/${item.id}/update`} className="button is-green is-small">
+                            <Link to={`/items/${item.id}/update`} className="button buttonTable is-green is-small">
                                 Atualizar
                             </Link>
                             <DeleteButton itemName={item.name} itemId={item.id}/>

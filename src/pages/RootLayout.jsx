@@ -12,7 +12,7 @@ export default function RootLayout() {
         </header>
 
         {/*Responsável por renderizar as childrens de RootLayout = Home e ItemsLayout*/}
-        <div>
+        <div className="divRootLayout">
             <Outlet/>
         </div>
 

@@ -118,6 +118,7 @@ th, td {
   padding: .5em 1em;
   text-decoration: none;
   transition: .2s;
+
 }
 
 .button + .button {
@@ -215,3 +216,67 @@ input, textarea, select {
 .warm{
   color: #ff5258;
 }
+
+.showButtons{
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+
+  .noMobile{
+    display: none;
+  }
+
+}
+
+@media (max-width: 570px) {
+
+  .forMobile{
+    padding-right: 0;
+    padding-left: 1rem;
+  }
+
+  .button{
+    font-size: .5rem !important;   
+    padding: .5em .6em;
+    margin-left: 0;
+  }
+
+  .buttonsMobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    padding-top: 1.5rem;
+  }
+
+  .divRootLayout{
+    padding: 0.2rem !important;
+  }
+  
+  header{
+    padding: 0.4rem !important;
+  }
+
+  .row{
+    gap: 0.5rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+
+  .divLayout{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .showButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+

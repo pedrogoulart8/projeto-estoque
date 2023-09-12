@@ -9,7 +9,7 @@ export default function ItemsLayout() {
         <main>
             <h1 className="home-h1">Itens em estoque</h1>
 
-            <div>
+            <div className="divLayout">
 
             {/*Link para o component ListItem*/}
             <Link 
