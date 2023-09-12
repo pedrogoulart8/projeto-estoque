@@ -1,6 +1,6 @@
 ## Projeto responsivo que simula um aplicativo para controle de estoque
 
-https://projeto-estoque-pedro.vercel.app/
+https://projeto-estoque-pedrogoulart8.vercel.app/
 
 ### Tecnologias Utilizadas:
 React, JavaScript, Vite, HTML, CSS
